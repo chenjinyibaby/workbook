@@ -1,0 +1,32 @@
+*{
+    margin:0;
+    padding:0;
+}
+.topnavbar{
+    width:600px;
+    background-color:skyblue;
+    margin:20px auto;/*设置居中*/
+    overflow: hidden;
+}
+    
+.topnavbar-inner{
+    list-style: none;
+}
+.topnavbar-inner >li{
+    float:left; 
+}
+.topnavbar-inner a{
+    /*a是内联元素，不能直接设置宽度*/
+    display: inline-block;/*将a转换为块元素*/
+    width:150px;
+    /*设置文字居中*/
+    text-align: center;
+    /*设置上下内边距*/
+    padding:2.5px 0;
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+}
+.topnavbar-inner a:hover{
+ background-color:#c00; 
+}
